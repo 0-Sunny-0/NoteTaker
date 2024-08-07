@@ -10,6 +10,7 @@ const app = express();
 // This allows for backend/server to accept JSON (inputs from the forms)
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+//localhost:3001/api
 app.use('/api', api);
 
 app.use(express.static('public'));
